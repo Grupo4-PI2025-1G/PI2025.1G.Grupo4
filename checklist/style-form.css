@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #000;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  z-index: 10;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+header .btn {
+  padding: 5px 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hero {
+  position: relative;
+  background: url("medico.webp") no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 14px;
+}
+
+.form-section {
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 20px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: lightgray;
+}
+
+.options {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  accent-color: #00c084;
+  margin-right: 10px;
+}
+
+.btn-refazer {
+  display: inline-block;
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+body {
+  background: #fff;
+  color: #000;
+}
