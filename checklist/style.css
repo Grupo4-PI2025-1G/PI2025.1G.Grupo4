@@ -1,0 +1,285 @@
+html {
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+    padding: 15px;
+    width: 100%;
+}
+
+header img {
+    margin-left: 20px;
+    width: 100px;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.navbar li a {
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: 3px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  background: url("../src/local\ da\ dor.jpg") no-repeat center center/cover;
+  filter: brightness(60%);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 3vh;
+}
+
+.hero p {
+  font-size: 30px;
+}
+
+.form-section {
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+}
+
+label h1 {
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+}
+
+label h1::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.options {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+
+label:hover {
+  transform: translateX(20px);
+}
+
+input[type="checkbox"] {
+  accent-color: #00c084;
+  margin-right: 10px;
+}
+
+.btn-refazer {
+  display: inline-block;
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.category-header input[type="checkbox"] {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+}
+
+.itens input[type="checkbox"], .dor-barriga input[type="checkbox"] {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #55cea6;
+  border-color: #55cea6;
+}
+
+.category-header label {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.itens label, .dor-barriga label {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.itens label {
+  margin-left: 70px; 
+}
+
+.dor-barriga label {
+  margin-left: 100px;
+}
+
+.itens, .dor-barriga {
+  display: none;
+  flex-direction: column;
+}
+
+.erro {
+  margin-bottom: 10vh;
+}
+
+#submitBtn {
+  display: block;
+  margin-left: 37%;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10vh;
+  padding: 20px;
+}
+
+#resultado {
+  margin-top: 10vh;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#resultado h3 {
+  font-size: 50px;
+  margin-bottom: 4vh;
+}
+
+#resultado p {
+  font-size: 30px;
+}
+
+#resetBtn {
+  padding: 15px 25px;
+  background-color: #55cea6;
+  font-size: 20px;
+  margin-top: 4vh;
+  margin-left: 39%;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10vh;
+}
+
+
+.footer {
+  background-color: #55cea6;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-logos {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.logo-ifc {
+  height: 160px;
+  width: auto;
+}
+
+footer .logo {
+  height: 250px;
+  width: auto;
+  transform: translateY(-30px);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  flex-grow: 1;
+  margin-left: 3%;
+  transform: translateY(-50px);
+}
+
+.link-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-column li {
+  margin-top: 30px;
+}
+
+.link-column a {
+  color: #303030;
+  text-decoration: none;
+}
+
+.link-column a:hover {
+  color: #303030;
+  text-decoration: underline;
+}

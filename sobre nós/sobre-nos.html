@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós</title>
-    <link rel="stylesheet" href="style-about.css">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- IMPORT BOOTSTRAP P MELHOR ORGANIZAÇÃO/RESPONSIVIDADE -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
+    <!-- HEADER -->
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="../src/Logo.png" alt="Logo">
+            </div>
+            <ul class="navbar">
+                <li><a href="../index/index.html">Home</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="../sobre nós/sobre-nos.html">Sobre nós</a></li>
+                <li><button onclick="comecar()">Começar</button></li>
+            </ul>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="contatos.html">Contatos</a>
-            <a href="sobre-nos.html">Sobre nós</a>
-            <button onclick="window.location.href='index.html'">Começar</button>
-        </nav>
     </header>
 
+
+    <!-- PARTE PRINCIPAL -->
     <main>
         <div class="time">
             <h1>Conheça o nosso time</h1>
             <div class="membro">
-                <img src="Gabriela.jpg" alt="Foto de Perfil">
+                <img src="#" alt="Foto de Perfil">
                 <div class="info">
                     <h2>Gabriela Nietiedt</h2>
                     <p class="contact">(49) 98864-0360 | <a href="mailto:gabrielanietiedt0907@gmail.com">gabrielanietiedt0907@gmail.com</a></p>
@@ -34,7 +42,7 @@
                 </div>
             </div>
             <div class="membro">
-                <img src="Sérgio.jpg" alt="Foto de Perfil">
+                <img src="#" alt="Foto de Perfil">
                 <div class="info">
                     <h2>Sérgio Neto Bonetti</h2>
                     <p class="contact">(49) 99955-2500 | <a href="mailto:sergionetobonetti@gmail.com">sergionetobonetti@gmail.com</a></p>
@@ -44,7 +52,7 @@
                 </div>
             </div>
             <div class="membro">
-                <img src="Ágata.jpg" alt="Foto de Perfil">
+                <img src="#" alt="Foto de Perfil">
                 <div class="info">
                     <h2>Ágata Cristina Nossal Piccinin</h2>
                     <p class="contact">(49) 99201-7060 | <a href="mailto:agatacristina0808@gmail.com">agatacristina0808@gmail.com</a></p>
@@ -54,7 +62,7 @@
                 </div>
             </div>
             <div class="membro">
-                <img src="Gabriel.jpg" alt="Foto de Perfil">
+                <img src="#" alt="Foto de Perfil">
                 <div class="info">
                     <h2>Gabriel Pereira Da Silva</h2>
                     <p class="contact">(49) 98901-2066 | <a href="mailto:gahbriellpereiradasilva@gmail.com">gahbriellpereiradasilva@gmail.com</a></p>
@@ -64,7 +72,7 @@
                 </div>
             </div>
             <div class="membro">
-                <img src="Lara.jpg" alt="Foto de Perfil">
+                <img src="#" alt="Foto de Perfil">
                 <div class="info">
                     <h2>Lara Regina Biezus</h2>
                     <p class="contact">Contato</p>
@@ -74,7 +82,7 @@
                 </div>
             </div>
             <div class="membro">
-                <img src="Vanderlei.jpg" alt="Foto de Perfil">
+                <img src="#" alt="Foto de Perfil">
                 <div class="info">
                     <h2>Vanderlei Rossoni Pittan</h2>
                     <p class="contact">(49) 98918-7230 | <a href="mailto:vanderleirosoni@gmail.com">vanderleirosoni@gmail.com</a></p>
@@ -86,32 +94,55 @@
         </div>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <img class="if" src="if-logo.png" alt="Logo IF">
-                <img class="logo-footer" src="logo.png" alt="Logo do Site">
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-logos">
+                <img src="../src/Logos IFC/IFC Concórdia Horizontal BRANCO fundo transparente.png" alt="Logo IFC" class="logo-ifc">
+                <img src="../src/Logo.png" alt="Logo" class="logo">
             </div>
-            <div class="footer-columns">
-                <div>
-                    <h4>Home</h4>
-                    <p>Mais sobre saúde</p>
-                    <p>Objetivos</p>
-                    <p>Sites confiáveis</p>
+
+            <div class="footer-links">
+                <div class="link-column">
+                    <ul>
+                        <li><b><a href="../index/index.html">Home</a></b></li>
+                        <li><a href="../index/index.html#maissobresaude">Mais sobre saúde</a></li>
+                        <li><a href="../index/index.html#objetivos">Objetivos</a></li>
+                        <li><a href="../index/index.html#sitesconfiaveis">Sites confiáveis</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <h4>Contatos</h4>
-                    <p>e-mail@gmail.com</p>
-                    <p>(XX) XXXXX-XXXX</p>
+
+                <div class="link-column">
+                    <ul>
+                        <li><b><a href="#">Contatos</a></b></li>
+                        <li><a href="#">e-mail@gmail.com</a></li>
+                        <li><a href="#">(XX) XXXXX-XXXX</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <h4>Sobre nós</h4>
-                    <p>Criadores</p>
-                    <p>Propósito</p>
+
+                <div class="link-column">
+                    <ul>
+                        <li><b><a href="../sobre nós/sobre-nos.html">Sobre nós</a></b></li>
+                        <li><a href="#">Criadores</a></li>
+                        <li><a href="#">Propósito</a></li>
+                    </ul>
                 </div>
+
             </div>
         </div>
     </footer>
+
+    
+    <!-- SCRIPT DO BOTAO DE COMEÇAR -->
+    <script>
+
+        function comecar() {
+            window.location.href = "../checklist/checklist.html"
+        }
+
+    </script>
 
 </body>
 </html>

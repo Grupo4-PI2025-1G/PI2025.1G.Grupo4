@@ -1,7 +1,0 @@
-pagina do checklist:
-
-- não fazer o wirefrae do texto de resultado
-- inicia com um titulo "inicie a pesquisa da sua dor" com um pequeno paragrafo e um botao de iniciar
-- ao clicar em iniciar ele muda os elementos mostrando a caixinha de seleção parte superior e inferior
-- ao selecionar uma das duas mostra as checkbox
-- ao clicar em enviar, mostra o resultado entre as checkbox e o botao de refazer

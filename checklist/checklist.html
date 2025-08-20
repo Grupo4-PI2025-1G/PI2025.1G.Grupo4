@@ -4,16 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Onde está a sua dor?</title>
-  <link rel="stylesheet" href="style-form.css">
+
+  <!-- LINK CSS E JS -->
+  <script src="./script.js"></script>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- IMPORT BOOTSTRAP P MELHOR ORGANIZAÇÃO/RESPONSIVIDADE -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <a href="index.html">Home</a>
-    <a href="#">Contatos</a>
-    <a href="sobre-nos.html">Sobre nós</a>
-    <button class="btn">Começar</button>
+      <div class="header">
+        <ul class="navbar">
+            <li><a href="../index/index.html">Home</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="../sobre nós/sobre-nos.html">Sobre nós</a></li>
+            <li><button onclick="comecar()">Começar</button></li>
+        </ul>
+      </div>
   </header>
 
+
+  <!-- IMAGEM COM TEXTO -->
   <section class="hero">
     <div>
       <h1>Onde está a sua dor?</h1>
@@ -21,26 +35,134 @@
     </div>
   </section>
 
-  <section class="form-section">
-    <h2>Parte superior</h2>
-    <div class="options">
-      <label><input type="checkbox">Cabeça</label>
-      <label><input type="checkbox">Pescoço</label>
-      <label><input type="checkbox">Ombros</label>
-      <label><input type="checkbox" checked>Braços</label>
-      <label><input type="checkbox">Torço</label>
-      <label><input type="checkbox">Peito</label>
-      <label><input type="checkbox">Barriga</label>
-      <label><input type="checkbox" checked>Costa</label>
+
+  <!-- INICIO DO CHECKLIST -->
+  <div class="container">
+
+    <!-- PARTE SUPERIOR -->
+    <div class="parte-superior">
+      <div class="category-header">
+        <input type="checkbox" class="category-toggle" id="toggle-superior">
+        <label for="toggle-superior"><h1>Parte Superior</h1></label>
+      </div>
+
+      <!-- ITENS PARTE SUPERIOR -->
+      <div class="itens">
+        <label><input type="checkbox" value="dor-de-cabeca">Dor de cabeça</label>
+        <label><input type="checkbox" value="dor-nas-costas">Dor nas costas</label>
+        <label><input type="checkbox" value="dor-de-garganta">Dor de garganta</label>
+        <label><input type="checkbox" value="dor-de-ouvido">Dor de ouvido</label>
+        <label><input type="checkbox" value="dor-muscular">Dor muscular</label>
+        <label><input type="checkbox" value="dor-na-costela">Dor na costela</label>
+        <label><input type="checkbox" value="dor-na-mama">Dor na mama</label>
+        <label><input type="checkbox" value="dor-no-ombro">Dor no ombro</label>
+        <label><input type="checkbox" value="dor-no-peito">Dor no peito</label>
+        <label><input type="checkbox" value="dor-nos-olhos">Dor nos olhos</label>
+        <label><input type="checkbox" value="dor-nas-articulacoes">Dor nas articulações</label>
+        <label><input type="checkbox" id="toggle-dor-barriga">Dor de barriga</label>
+
+        <!-- ITENS DOR DE BARRIGA -->
+        <div class="dor-barriga">
+          <label><input type="checkbox" value="dor-abdominal">Dor abdominal</label>
+          <label><input type="checkbox" value="dor-de-estomago">Dor de estômago</label>
+        </div>
+      </div>
     </div>
 
-    <h2>Parte inferior</h2>
-    <div class="options">
-      <label><input type="checkbox">Pernas</label>
-      <label><input type="checkbox">Pés</label>
+    <!-- PARTE INFERIOR -->
+    <div class="parte-inferior">
+      <div class="category-header">
+        <input type="checkbox" class="category-toggle" id="toggle-inferior">
+        <label for="toggle-inferior"><h1>Parte Inferior</h1></label>
+      </div>
+
+      <!-- ITENS PARTE INFERIOR -->
+      <div class="itens">
+        <label><input type="checkbox" value="dor-nos-pes">Dor nos pés</label>
+        <label><input type="checkbox" value="dor-muscular">Dor muscular</label>
+        <label><input type="checkbox" value="dor-nas-articulacoes">Dor nas articulações</label>
+      </div>
     </div>
 
-    <button class="btn-refazer">Refazer</button>
-  </section>
+    <!-- SINTOMAS -->
+    <div class="sintomas">
+      <div class="category-header">
+        <input type="checkbox" class="category-toggle" id="toggle-sintomas">
+        <label for="toggle-sintomas"><h1>Sintomas Gerais</h1></label>
+      </div>
+      
+      <!-- ITENS SINTOMAS -->
+      <div class="itens">
+        <label><input type="checkbox" value="febre">Febre</label>
+        <label><input type="checkbox" value="fraqueza-muscular">Fraqueza muscular</label>
+        <label><input type="checkbox" value="labirintite">Labirintite</label>
+        <label><input type="checkbox" value="nauseas-vomitos">Náuseas e vômitos</label>
+        <label><input type="checkbox" value="vertigem">Vertigem</label>
+        <label><input type="checkbox" value="zumbido-ouvido">Zumbido no ouvido</label>
+        <label><input type="checkbox" value="garganta-inflamada">Garganta inflamada</label>
+        <label><input type="checkbox" value="azia">Azia</label>
+      </div>
+    </div>
+
+    <!-- BOTAO E DIV DOS RESULTADOS -->
+    <button type="button" id="submitBtn">Gerar Resumo dos Sintomas</button>
+    <div id="resultado"></div>
+  </div>
+  
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-logos">
+                <img src="../src/Logos IFC/IFC Concórdia Horizontal BRANCO fundo transparente.png" alt="Logo IFC" class="logo-ifc">
+                <img src="../src/Logo.png" alt="Logo" class="logo">
+            </div>
+
+            <div class="footer-links">
+                <div class="link-column">
+                    <ul>
+                        <li><b><a href="../index/index.html">Home</a></b></li>
+                        <li><a href="../index/index.html#maissobresaude">Mais sobre saúde</a></li>
+                        <li><a href="../index/index.html#objetivos">Objetivos</a></li>
+                        <li><a href="../index/index.html#sitesconfiaveis">Sites confiáveis</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-column">
+                    <ul>
+                        <li><b><a href="#">Contatos</a></b></li>
+                        <li><a href="#">e-mail@gmail.com</a></li>
+                        <li><a href="#">(XX) XXXXX-XXXX</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-column">
+                    <ul>
+                        <li><b><a href="../sobre nós/sobre-nos.html">Sobre nós</a></b></li>
+                        <li><a href="#">Criadores</a></li>
+                        <li><a href="#">Propósito</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 </body>
+
+
+    <!-- SCRIPT DO BOTAO DE COMEÇAR -->
+    <script>
+
+        function comecar() {
+            window.location.href = "../checklist/checklist.html"
+        }
+
+    </script>
+
+    <!-- IMPORTS BOOTSTRAP P MELHOR ORGANIZAÇÃO/RESPONSIVIDADE -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </html>

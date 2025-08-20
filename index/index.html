@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- IMPORT BOOTSTRAP P MELHOR ORGANIZAÇÃO/RESPONSIVIDADE -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Nome do Site</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="../src/Logo.png" alt="Logo">
+            </div>
+            <ul class="navbar">
+                <li><a href="../index/index.html">Home</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="../sobre nós/sobre-nos.html">Sobre nós</a></li>
+                <li><button onclick="comecar()">Começar</button></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- SEÇÃO 1 = PARTE DO SENTINDO DOR E DA IMAGEM DAS PESSOAS CORRENDO -->
+    <section class="secao-1">
+        <h1>Sentindo dor?</h1>
+        <p>Nosso site pode lhe ajudar! Clique em começar, selecione o local da dor e<br>descubra mais sobre o que pode ser e como melhorar ela.</p>
+        <button onclick="comecar()">Começar</button>
+        <div>
+            <img src="../src/home page01.jpg" alt="Pessoa praticando Exercícios">
+        </div>
+    </section>
+
+    
+    <!-- SEÇÃO 2 = OS 3 CONTAINERS COM AS IMAGENS ("Mais sobre saúde") -->
+    <section class="secao-2">
+        <h1 id="maissobresaude">Mais sobre saúde</h1>
+        <div class="d-flex justify-content-center gap-4">
+            <!-- CONTAINER 1 -->
+            <div class="content">
+                <div class="container-box"><img src="../src/home page03.jpg" alt="Bowl de frutas"></div>
+                    <h5>Alimentação</h5>
+                    <p>Nosso corpo precisa de energia para se manter saudável.</p>
+                </div>
+
+            <!-- CONTAINER 2 -->
+            <div class="content">
+                <div class="container-box"><img src="../src/home page02.jpg" alt=""></div>
+                    <h5>Exercícios</h5>
+                    <p>Movimentar o corpo pode prevenir dores musculares.</p>
+                </div>
+
+            <!-- CONTAINER 3 -->
+            <div class="content">
+                <div class="container-box"><img src="../src/home page04.jpg" alt=""></div>
+                    <h5>Medicações</h5>
+                    <p>Certos remédios podem sempre ajudar a diminuir dores.</p>
+            </div>
+    </section>
+
+
+    <!-- SEÇÃO 3 = PARAGRAFOS OBJETIVO E IMAGEM -->
+    <section class="secao-3">
+        <div class="objetivos" id="objetivos">
+            <div class="paragrafos">
+                <h1>Objetivos</h1>
+
+                <div class="paragrafo1">
+                    <h3>Ajudar</h3>
+                    <p>Tentar encontrar a melhor definição e solução do problema/dor descrita</p>
+                </div>
+
+                <div class="paragrafo2">
+                    <h3>Informar</h3>
+                    <p>Entregar o máximo de informações em relação à saúde possível ao usuário</p>
+                </div>
+
+                <div class="paragrafo3">
+                    <h3>Descobrir</h3>
+                    <p>Contribuir ao usuário soluções e técnicas sobre o problema e interessá-lo à manter-se saudável</p>
+                </div>
+
+                <button class="comecar" onclick="comecar()">Começar</button>
+            </div>
+
+            <div class="imagem">
+                <img src="../src/home page05.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SEÇÃO 4 = SITES CONFIAVEIS -->
+    <section class="secao-4">
+        <h1 id="sitesconfiaveis">Sites confiáveis</h1>
+        <div class="d-flex justify-content-center gap-4">
+            <!-- CONTAINER 1 -->
+            <div class="content">
+                <div class="container-box"><img src="../src/tua saude.png" alt=""></div>
+                    <h5>Tua Saúde</h5>
+                    <p>O Tua Saúde é um espaço informativo, de divulgação e educação sobre temas relacionados com saúde, nutrição e bem-estar.</p>
+                </div>
+
+            <!-- CONTAINER 2 -->
+            <div class="content">
+                <div class="container-box"><img src="../src/minha vida.webp" alt=""></div>
+                    <h5>Minha Vida</h5>
+                    <p>O maior portal de saúde e bem-estar do Brasil. Cuide melhor da sua saúde: acesse o Minha Vida e melhore sua qualidade de vida.</p>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- SEÇÃO 5 = OS 3 CONTAINERS COM OS CRIADORES -->
+    <section class="secao-5">
+        <h1 class="d-flex justify-content-center">Criadores</h1>
+        <div class="d-flex gap-4 container">
+
+            <!-- Container 1 -->
+            <div class="card-box">
+            <h3>Vamos lhe ajudar!</h3>
+                <div class="profile-section">
+                    <img src="../src/perfil.jpg" alt="Foto" class="profile-img">
+                    <div class="profile-text">
+                        <strong>Nome</strong>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container 2 -->
+            <div class="card-box">
+            <h3>Saúde todo dia.</h3>
+                <div class="profile-section">
+                    <img src="../src/perfil.jpg" alt="Foto" class="profile-img">
+                    <div class="profile-text">
+                        <strong>Nome</strong>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container 3 -->
+            <div class="card-box">
+            <h3>Sempre há solução.</h3>
+                <div class="profile-section">
+                    <img src="../src/perfil.jpg" alt="Foto" class="profile-img">
+                    <div class="profile-text">
+                        <strong>Nome</strong>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SEÇÃO 6 = PRE-FOOTER -->
+    <div class="pre-footer">
+        <h1>Vamos começar!</h1>
+        <div>
+            <button class="comecar" onclick="comecar()">Começar</button>
+            <button class="voltar" onclick="voltarTopo()">Voltar ao topo</button>
+        </div>
+    </div>
+
+
+    <!-- SEÇÃO 7 = FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-logos">
+                <img src="../src/Logos IFC/IFC Concórdia Horizontal BRANCO fundo transparente.png" alt="Logo IFC" class="logo-ifc">
+                <img src="../src/Logo.png" alt="Logo" class="logo">
+            </div>
+
+            <div class="footer-links">
+                <div class="link-column">
+                    <ul>
+                        <li><b><a href="../index/index.html">Home</a></b></li>
+                        <li><a href="../index/index.html#maissobresaude">Mais sobre saúde</a></li>
+                        <li><a href="../index/index.html#objetivos">Objetivos</a></li>
+                        <li><a href="../index/index.html#sitesconfiaveis">Sites confiáveis</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-column">
+                    <ul>
+                        <li><b><a href="#">Contatos</a></b></li>
+                        <li><a href="#">e-mail@gmail.com</a></li>
+                        <li><a href="#">(XX) XXXXX-XXXX</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-column">
+                    <ul>
+                        <li><b><a href="../sobre nós/sobre-nos.html">Sobre nós</a></b></li>
+                        <li><a href="#">Criadores</a></li>
+                        <li><a href="#">Propósito</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        function comecar() {
+            window.location.href = "../checklist/checklist.html"
+        }
+
+        function voltarTopo() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+
+    <!-- IMPORTS BOOTSTRAP P MELHOR ORGANIZAÇÃO/RESPONSIVIDADE -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

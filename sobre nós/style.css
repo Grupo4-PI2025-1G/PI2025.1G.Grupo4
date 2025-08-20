@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif, monospace;
+    background-color: white;
+    color: black;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #55cea6;
+    padding: 15px;
+    width: 100%;
+}
+
+header img {
+    margin-left: 20px;
+    width: 100px;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.navbar li a {
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.time {
+    padding: 50px 120px;
+}
+
+main h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.membro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.membro img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.info {
+    margin-left: 25px;
+}
+
+.info h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.info .contact {
+    color: #777;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.info p {
+    font-size: 20px;
+    margin: 2px 0;
+}
+
+.footer {
+    background-color: #55cea6;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-logos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.logo-ifc {
+    height: 160px;
+    width: auto;
+}
+
+footer .logo {
+    height: 250px;
+    width: auto;
+    transform: translateY(-30px);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    flex-grow: 1;
+    margin-left: 3%;
+    transform: translateY(-50px);
+}
+
+.link-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-column li {
+    margin-top: 30px;
+}
+
+.link-column a {
+    color: #303030;
+    text-decoration: none;
+}
+
+.link-column a:hover {
+    color: #303030;
+    text-decoration: underline;
+}
