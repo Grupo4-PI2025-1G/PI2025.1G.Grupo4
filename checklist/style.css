@@ -29,7 +29,7 @@ header img {
 
 .navbar li a {
     font-weight: 500;
-    color: black;
+    color: white;
     font-size: 20px;
     text-decoration: none;
 }
@@ -37,31 +37,43 @@ header img {
 .header button {
     padding: 10px 20px;
     background-color: transparent;
-    color: black;
-    border: 3px solid black;
+    color: white;
+    border: 2px solid white;
     border-radius: 7px;
     cursor: pointer;
 }
 
-.hero {
-  position: relative;
-  background: url("../src/local\ da\ dor.jpg") no-repeat center center/cover;
-  filter: brightness(60%);
-  height: 300px;
+.hero-section {
+  height: 65vh;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/local\ da\ dor.jpg") no-repeat center center;
+  background-size: cover;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+.hero-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  color: #fff;
+  padding: 0 20px;
 }
 
-.hero h1 {
+.hero-content h1 {
   font-size: 60px;
-  margin-bottom: 3vh;
+  margin-bottom: 1rem;
 }
 
-.hero p {
+.hero-content p {
   font-size: 30px;
+  max-width: 1000px;
+}
+
+.container {
+  margin-top: 15vh;
 }
 
 .form-section {
