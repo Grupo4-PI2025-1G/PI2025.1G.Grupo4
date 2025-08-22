@@ -19,7 +19,7 @@
             </div>
             <ul class="navbar">
                 <li><a href="../index/index.html">Home</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#contato">Contato</a></li>
                 <li><a href="../sobre nós/sobre-nos.html">Sobre nós</a></li>
                 <li><button onclick="comecar()">Começar</button></li>
             </ul>
@@ -103,14 +103,14 @@
             <!-- CONTAINER 1 -->
             <div class="content">
                 <div class="container-box"><img src="../src/tua saude.png" alt=""></div>
-                    <h5>Tua Saúde</h5>
+                    <h5 onclick="tuasaude()">Tua Saúde</h5>
                     <p>O Tua Saúde é um espaço informativo, de divulgação e educação sobre temas relacionados com saúde, nutrição e bem-estar.</p>
                 </div>
 
             <!-- CONTAINER 2 -->
             <div class="content">
                 <div class="container-box"><img src="../src/minha vida.webp" alt=""></div>
-                    <h5>Minha Vida</h5>
+                    <h5 onclick="minhavida()">Minha Vida</a></h5>
                     <p>O maior portal de saúde e bem-estar do Brasil. Cuide melhor da sua saúde: acesse o Minha Vida e melhore sua qualidade de vida.</p>
                 </div>
         </div>
@@ -129,7 +129,7 @@
                     <img src="../src/perfil.jpg" alt="Foto" class="profile-img">
                     <div class="profile-text">
                         <strong>Nome</strong>
-                        <a href="#">Saiba mais</a>
+                        <a href="../sobre nós/sobre-nos.html">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
                     <img src="../src/perfil.jpg" alt="Foto" class="profile-img">
                     <div class="profile-text">
                         <strong>Nome</strong>
-                        <a href="#">Saiba mais</a>
+                        <a href="../sobre nós/sobre-nos.html">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -153,7 +153,7 @@
                     <img src="../src/perfil.jpg" alt="Foto" class="profile-img">
                     <div class="profile-text">
                         <strong>Nome</strong>
-                        <a href="#">Saiba mais</a>
+                        <a href="../sobre nós/sobre-nos.html">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -193,8 +193,8 @@
 
                 <div class="link-column">
                     <ul>
-                        <li><b><a href="#">Contatos</a></b></li>
-                        <li><a href="#">e-mail@gmail.com</a></li>
+                        <li><b><a href="#contato" id="contato">Contatos</a></b></li>
+                        <li><a href="https://mail.google.com/mail/u/0/?fs=1&to=grupo4PI2025ifc@gmail.com .com&tf=cm">grupo4PI2025ifc@gmail.com </a></li>
                         <li><a href="#">(XX) XXXXX-XXXX</a></li>
                     </ul>
                 </div>
@@ -202,8 +202,8 @@
                 <div class="link-column">
                     <ul>
                         <li><b><a href="../sobre nós/sobre-nos.html">Sobre nós</a></b></li>
-                        <li><a href="#">Criadores</a></li>
-                        <li><a href="#">Propósito</a></li>
+                        <li><a href="../sobre nós/sobre-nos.html">Criadores</a></li>
+                        <li><a href="../sobre nós/sobre-nos.html">Propósito</a></li>
                     </ul>
                 </div>
 
@@ -220,6 +220,14 @@
         function voltarTopo() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
+        }
+
+        function tuasaude() {
+            window.open('https://www.tuasaude.com/', '_blank');
+        }
+
+        function minhavida() {
+            window.open('https://www.minhavida.com.br/', '_blank');
         }
 
     </script>
