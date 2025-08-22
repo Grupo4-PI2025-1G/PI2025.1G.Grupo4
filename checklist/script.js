@@ -60,7 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        let htmlFinal = '<h3>Resumo dos Sintomas Selecionados:</h3>';
+        document.getElementById("container-checklist").style.display = "none"
+        let htmlFinal = '<h3><b>Sua dor pode ser:</b></h3>';
 
         checkboxesMarcados.forEach(checkbox => {
             const valor = checkbox.value;
