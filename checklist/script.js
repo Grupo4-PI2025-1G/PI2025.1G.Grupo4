@@ -52,10 +52,11 @@ document.addEventListener("DOMContentLoaded", function () {
     submitBtn.addEventListener("click", () => {
         const checkboxesMarcados = document.querySelectorAll('.itens input[type="checkbox"]:checked');
         resultadoDiv.innerHTML = '';
+        const dorBarrigaCheckbox = document.querySelector('#toggle-dor-barriga');
 
         const resetButtonHTML = `<br><button type="button" id="resetBtn" onclick="location.reload()">Refazer Questionário</button>`;
 
-        if (checkboxesMarcados.length === 0) {
+        if (checkboxesMarcados.length === 0 || dorBarrigaCheckbox.checked) {
             resultadoDiv.innerHTML = '<p class="erro">Nenhum sintoma foi selecionado.</p>';
             return;
         }
