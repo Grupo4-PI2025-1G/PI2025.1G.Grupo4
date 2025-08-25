@@ -51,15 +51,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     submitBtn.addEventListener("click", () => {
         const checkboxesMarcados = document.querySelectorAll('.itens input[type="checkbox"]:checked');
-        const dorBarrigaCheckbox = document.querySelector('#toggle-dor-barriga');
         resultadoDiv.innerHTML = '';
 
-        const resetButtonHTML = `<br><button type="button" id="resetBtn" onclick="location.reload()">Refazer Questionário</button>`;
+        const resetButtonHTML = `<div class="container"><button type="button" id="resetBtn" onclick="location.reload()">Refazer Questionário</button></div>`;
 
         const sintomasValidos = Array.from(checkboxesMarcados).filter(cb => cb.id !== 'toggle-dor-barriga');
 
         if (sintomasValidos.length === 0) {
-            resultadoDiv.innerHTML = '<p class="erro">Nenhum sintoma foi selecionado.</p>';
+            resultadoDiv.innerHTML = '<p class="erro text-center">Nenhum sintoma foi selecionado.</p>';
             return;
         }
 
@@ -70,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const valor = checkbox.value;
             const textoLabel = checkbox.closest('label').textContent.trim();
             const descricao = descricoesSintomas[valor] || 'Descrição não disponível.';
+            submitBtn.style.display = "none"
 
             htmlFinal += `<p><strong>${textoLabel}:</strong> ${descricao}</p>`;
         });

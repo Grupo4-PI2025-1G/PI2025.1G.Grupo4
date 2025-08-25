@@ -77,6 +77,15 @@ header img {
   display: block;
 }
 
+.container-checklist {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 10vh;
+  padding: 0 40px;
+}
+
 .form-section {
   padding: 40px;
   max-width: 600px;
@@ -84,7 +93,7 @@ header img {
 }
 
 label h1 {
-  font-size: 60px;
+  font-size: 40px;
   display: flex;
   align-items: center;
 }
@@ -97,7 +106,7 @@ label h1::before {
 }
 
 .options {
-  margin-left: 30px;
+  margin-left: 20px;
   margin-bottom: 20px;
 }
 
@@ -115,7 +124,6 @@ label:hover {
 
 input[type="checkbox"] {
   accent-color: #00c084;
-  margin-right: 10px;
 }
 
 .btn-refazer {
@@ -146,14 +154,14 @@ input[type="checkbox"] {
 }
 
 .category-header input[type="checkbox"] {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border: 2px solid #000;
 }
 
 .itens input[type="checkbox"], .dor-barriga input[type="checkbox"] {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border: 2px solid #000;
 }
 
@@ -223,9 +231,10 @@ input[type="checkbox"]:checked {
 }
 
 #resetBtn {
-  padding: 15px 25px;
+  padding: 20px 30px;
   background-color: #55cea6;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
   margin-top: 4vh;
   margin-left: 39%;
   color: black;
