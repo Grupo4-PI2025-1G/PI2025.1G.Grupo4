@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const sintomasValidos = Array.from(checkboxesMarcados).filter(cb => cb.id !== 'toggle-dor-barriga');
 
         if (sintomasValidos.length === 0) {
-            resultadoDiv.innerHTML = '<p class="erro">Nenhum sintoma foi selecionado.</p>';
+            resultadoDiv.innerHTML = '<p class="erro text-center">Nenhum sintoma foi selecionado.</p>';
             return;
         }
 
