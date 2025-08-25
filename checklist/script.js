@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     submitBtn.addEventListener("click", () => {
         const checkboxesMarcados = document.querySelectorAll('.itens input[type="checkbox"]:checked');
-        const dorBarrigaCheckbox = document.querySelector('#toggle-dor-barriga');
         resultadoDiv.innerHTML = '';
 
         const resetButtonHTML = `<br><button type="button" id="resetBtn" onclick="location.reload()">Refazer Questionário</button>`;
