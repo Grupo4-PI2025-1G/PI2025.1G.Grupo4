@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const resultadoDiv = document.getElementById("resultado");
 
     const descricoesSintomas = {
-        "dor-de-cabeca": "A dor de cabeça é um sintoma comum que pode variar em intensidade, duração e localização (testa, têmporas, nuca).",
+        "dor-de-cabeca": "A dor de cabe.ça é um sintoma comum que pode variar em intensidade, duração e localização (testa, têmporas, nuca). Se tem histórico familiar de enxaqueca, uma dor quase que contante e/ou de extremo nível, pode ser o motivo da dor. Mas sentir dor de cabeça todos os dias não é normal. Se ela estiver associada a sintomas como: febre alta, náuseas e vômito, desmaio e dificuldade para enxergar, busque imediatamente um médico especialista, que poderá realizar o diagnóstico adequado. <br> ",
         "dor-nas-costas": "Dor nas costas é um sintoma muito comum que pode variar de leve a intensa, e pode ser causada por problemas na coluna, músculos ou até em órgãos próximos.",
         "dor-de-garganta": "A dor de garganta é um sintoma comum geralmente causado por infecções (virais ou bacterianas) ou inflamações leves, tratadas com anti-inflamatórios ou antibióticos quando necessário.",
         "dor-de-ouvido": "A dor de ouvido é um sintoma comum, especialmente em crianças, que pode variar de temporária a constante, ocorrendo na orelha, mandíbula ou áreas próximas. Suas causas são diversas, podendo estar relacionadas diretamente ao ouvido ou a outras regiões d corpo.",
@@ -51,14 +51,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     submitBtn.addEventListener("click", () => {
         const checkboxesMarcados = document.querySelectorAll('.itens input[type="checkbox"]:checked');
+        const dorBarrigaCheckbox = document.querySelector('#toggle-dor-barriga');
         resultadoDiv.innerHTML = '';
 
-        const resetButtonHTML = `<div class="container"><button type="button" id="resetBtn" onclick="location.reload()">Refazer Questionário</button></div>`;
+        const resetButtonHTML = `<br><button type="button" id="resetBtn" onclick="location.reload()">Refazer Questionário</button>`;
 
         const sintomasValidos = Array.from(checkboxesMarcados).filter(cb => cb.id !== 'toggle-dor-barriga');
 
         if (sintomasValidos.length === 0) {
-            resultadoDiv.innerHTML = '<p class="erro text-center">Nenhum sintoma foi selecionado.</p>';
+            resultadoDiv.innerHTML = '<p class="erro">Nenhum sintoma foi selecionado.</p>';
             return;
         }
 
@@ -69,7 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const valor = checkbox.value;
             const textoLabel = checkbox.closest('label').textContent.trim();
             const descricao = descricoesSintomas[valor] || 'Descrição não disponível.';
-            submitBtn.style.display = "none"
+            document.getElementById("submitBtn").style.display = ("none")
+
 
             htmlFinal += `<p><strong>${textoLabel}:</strong> ${descricao}</p>`;
         });
