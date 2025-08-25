@@ -313,8 +313,10 @@ header img {
 }
 
 .profile-section img {
-    width: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    transform: translateY(-5px);
 }
 
 .pre-footer {
@@ -406,4 +408,8 @@ footer .logo {
 .link-column a:hover {
     color: #303030;
     text-decoration: underline;
+}
+
+#maissobresaude, #objetivos, #sitesconfiaveis {
+    scroll-margin-top: 5vh;
 }
